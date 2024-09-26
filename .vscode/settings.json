@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/4a7ce913-6d3d-4283-bf51-0f47a8a03521/resourceGroups/Capstone/providers/Microsoft.Web/sites/Aggie-Home-Weather-Station",
+    "appService.deploySubpath": "."
+}

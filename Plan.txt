@@ -1,0 +1,37 @@
+I need to build a website / app so that the weather station data can be easily acssesed in the home network
+
+Requirements:
+    1. Easily present the data with changeable units in a simple and easy way
+        i) Frontend
+            a) Graphical design
+            b) Easy to use buttons for unit conversions
+        ii) Backend
+            a) Data trends
+            b) Unit conversion calculation
+    2. Minimise the cost of use in power/cloud compute
+
+
+
+
+
+
+Options
+1. Azure , Cyberseucrity of clouds systems, Use a login/api system, how to build a web app that runs of of the cloud
+2. Own server, send the data over wifi to our own sensor usong a port, need to secure the port,
+3. put the server in the box, connect to the box over wifi and have
+
+
+Android App- google play store
+    8 digit pi for your specific house to ensure that you only see your own data
+        research the cyber security componets of this
+
+
+
+
+Reach goals:
+    1. Goggle login support
+    2. Compare data to local/national weather data to make inferences about the current weather
+    3. Have mulpitple users / weather stations
+    4. Grab phases of the moon from the internet and just have them on the website
+    5. Custom website formating if they want to change the locations
+    6. Have a battery level readout
