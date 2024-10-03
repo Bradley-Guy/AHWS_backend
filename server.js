@@ -54,6 +54,7 @@ app.use(cors({
     origin: [
       'https://aggie-home-weather-station.azurewebsites.net',
       'https://delightful-mud-0e0ccef10.5.azurestaticapps.net/',
+      'http://localhost:3000',
     ],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
   }));
