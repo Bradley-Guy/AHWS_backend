@@ -53,7 +53,7 @@ app.use(express.json());
 app.use(cors({
     origin: [
       'https://aggie-home-weather-station.azurewebsites.net',
-      'https://ambitious-pond-004410d1e.5.azurestaticapps.net',
+      'https://delightful-mud-0e0ccef10.5.azurestaticapps.net/',
     ],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
   }));
