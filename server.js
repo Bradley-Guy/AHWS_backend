@@ -98,34 +98,34 @@ app.post('/post_data', async (req, res) => {
         }
 
         // Wind Speed (e.g., in meters per second)
-        if (data.wind_speed_mph > 150 || data.wind_speed_mph < 0 || typeof data.wind_speed_mph !== 'number' || isNaN(data.wind_speed_mph)) {
-            return res.status(400).json({ message: "Wind Speed is out of expected range " + data.wind_speed_mph});
-        }
+        // if (data.wind_speed_mph > 150 || data.wind_speed_mph < 0 || typeof data.wind_speed_mph !== 'number' || isNaN(data.wind_speed_mph)) {
+        //     return res.status(400).json({ message: "Wind Speed is out of expected range " + data.wind_speed_mph});
+        // }
 
-        // Light (e.g., in lux)
-        if (data.light > 100000 || data.light < 0 || typeof data.light !== 'number' || isNaN(data.light)) {
-            return res.status(400).json({ message: "Light level is out of expected range" });
-        }
+        // // Light (e.g., in lux)
+        // if (data.light > 100000 || data.light < 0 || typeof data.light !== 'number' || isNaN(data.light)) {
+        //     return res.status(400).json({ message: "Light level is out of expected range" });
+        // }
 
-        // Soil Moisture (percentage)
-        if (data.soil_moisture > 100 || data.soil_moisture < 0 || typeof data.soil_moisture !== 'number' || isNaN(data.soil_moisture)) {
-            return res.status(400).json({ message: "Soil Moisture is out of expected range" });
-        }
+        // // Soil Moisture (percentage)
+        // if (data.soil_moisture > 100 || data.soil_moisture < 0 || typeof data.soil_moisture !== 'number' || isNaN(data.soil_moisture)) {
+        //     return res.status(400).json({ message: "Soil Moisture is out of expected range" });
+        // }
 
         // Humidity (percentage)
         if (data.humidity > 100 || data.humidity < 0 || typeof data.humidity !== 'number' || isNaN(data.humidity)) {
             return res.status(400).json({ message: "Humidity is out of expected range" });
         }
 
-        // Wind Direction (degrees)
-        if (data.wind_direction > 360 || data.wind_direction < 0 || typeof data.wind_direction !== 'number' || isNaN(data.wind_direction)) {
-            return res.status(400).json({ message: "Wind Direction is out of expected range" });
-        }
+        // // Wind Direction (degrees)
+        // if (data.wind_direction > 360 || data.wind_direction < 0 || typeof data.wind_direction !== 'number' || isNaN(data.wind_direction)) {
+        //     return res.status(400).json({ message: "Wind Direction is out of expected range" });
+        // }
 
-        // Precipitation (e.g., in millimeters)
-        if (data.precipitation < 0 || typeof data.precipitation !== 'number' || isNaN(data.precipitation)) {
-            return res.status(400).json({ message: "Precipitation is out of expected range" });
-        }
+        // // Precipitation (e.g., in millimeters)
+        // if (data.precipitation < 0 || typeof data.precipitation !== 'number' || isNaN(data.precipitation)) {
+        //     return res.status(400).json({ message: "Precipitation is out of expected range" });
+        // }
 
         
         const result = await insertWeatherData(data);
